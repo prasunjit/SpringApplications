@@ -1,0 +1,11 @@
+.metadata
+.recommenders
+RemoteSystemsTempFiles
+Servers
+*.classpath
+*.project
+*.settings
+*/target/
+
+
+*maven-wrapper.jar

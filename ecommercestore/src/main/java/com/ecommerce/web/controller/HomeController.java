@@ -1,4 +1,4 @@
-package com.store.zcloth.controller;
+package com.ecommerce.web.controller;
 
 import javax.xml.ws.RequestWrapper;
 

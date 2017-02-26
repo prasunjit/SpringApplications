@@ -25,7 +25,7 @@
 	
 	<bean id="entityManagerFactory"
 		class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
-		<property name="hibernatePersistence" value="testjeDb" />
+		<property name="persistenceUnitName" value="hibernatePersistence" />
 	</bean>
 
     <bean id="txManager"

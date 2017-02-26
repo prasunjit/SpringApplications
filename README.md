@@ -13,10 +13,10 @@ Adds an explicit link that the user has to click to login. Followed this tutoria
 ##ecommercestore
 This is primarily a reference/tutorial website which shows how a spring/Hibernate/MongoDB/AngularJS/Bootstrap is wired to built a moden enterprise web application
 Technologies used 
-Spring 4.0
-Hibernate
-Hibernate OGM
-MongoDB
-Oracle
-AngularJS
-Bootstrap
+*Spring 4.0
+*Hibernate
+*Hibernate OGM
+*MongoDB
+*Oracle
+*AngularJS
+*Bootstrap

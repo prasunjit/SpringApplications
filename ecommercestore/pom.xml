@@ -9,24 +9,44 @@
 
 	<properties>
 		<jdk.version>1.8</jdk.version>
-		<spring.version>3.2.13.RELEASE</spring.version>
+		<spring.version>4.0.3.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
+		<hibernate-ogm.version>5.0.4.Final</hibernate-ogm.version>
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.hibernate.ogm/hibernate-ogm-mongodb -->
+		<dependency>
+			<groupId>org.hibernate.ogm</groupId>
+			<artifactId>hibernate-ogm-mongodb</artifactId>
+			<version>${hibernate-ogm.version}</version>
+		</dependency>
 
+		<!-- Spring dependency -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+         <dependency>
+    <groupId>org.jboss.jbossts</groupId>
+    <artifactId>jbossjta</artifactId>
+    <version>4.16.4.Final</version>
+</dependency>
+         
 
+        
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>4.0.3.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -42,18 +62,9 @@
 				</configuration>
 			</plugin>
 
-			<!-- <plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.2.11.v20150529</version>
-				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webApp>
-						<contextPath>/spring3</contextPath>
-					</webApp>
-				</configuration>
-			</plugin>
- -->
+			<!-- <plugin> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-maven-plugin</artifactId> 
+				<version>9.2.11.v20150529</version> <configuration> <scanIntervalSeconds>10</scanIntervalSeconds> 
+				<webApp> <contextPath>/spring3</contextPath> </webApp> </configuration> </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
@@ -65,7 +76,7 @@
 					<wtpContextName>spring3</wtpContextName>
 				</configuration>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 

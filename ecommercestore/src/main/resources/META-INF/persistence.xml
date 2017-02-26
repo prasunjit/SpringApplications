@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="hibernatePersistence"
+		transaction-type="JTA">
+		<jta-data-source />
+		<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+		<!-- the below should be mapped to hibernate cfg file -->
+		 <class>com.ecoomerce.web.model.TshirtHenley</class>
+		<properties>
+		<!-- donno what is this -->
+			<!-- <property name="hibernate.transaction.jta.platform"
+				value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform" /> -->
+			<property name="hibernate.ogm.datastore.provider" value="mongodb" />
+			<property name="hibernate.ogm.datastore.database" value="commercestore" />
+			<property name="hibernate.ogm.datastore.host" value="127.0.0.1" />
+			<property name="hibernate.ogm.datastore.port" value="27017" />
+			<!-- <property name="hibernate.ogm.datastore.username" value="root" />
+			<property name="hibernate.ogm.datastore.password" value="123456" /> -->
+			<property name="hibernate.ogm.datastore.create_database"
+				value="true" />
+			<!-- alternatively to  declarations, you can use a regular hibernate.cfg.xml file -->
+            <!-- <property name="hibernate.ejb.cfgfile" value="/org/hibernate/ejb/test/hibernate.cfg.xml"/> -->
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -6,10 +6,11 @@
 
 	<persistence-unit name="hibernatePersistence"
 		transaction-type="JTA">
-		<jta-data-source />
+		
 		<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+		<jta-data-source />
 		<!-- the below should be mapped to hibernate cfg file -->
-		 <class>com.ecoomerce.web.model.TshirtHenley</class>
+		 <class>com.ecommerce.web.model.TshirtHenley</class>
 		<properties>
 		<!-- donno what is this -->
 			<!-- <property name="hibernate.transaction.jta.platform"

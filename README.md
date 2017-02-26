@@ -11,8 +11,9 @@ Used Java 8,Spring Boot, social login to facebook using Oauth
 Adds an explicit link that the user has to click to login. Followed this tutorial from Spring guide. https://spring.io/guides/tutorials/spring-boot-oauth2/
 
 ##ecommercestore
-This is primarily a reference/tutorial website which shows how a spring/Hibernate/MongoDB/AngularJS/Bootstrap is wired to built a moden enterprise web application
-Technologies used 
+This is primarily a reference/tutorial website which shows how a spring/Hibernate/MongoDB/AngularJS/Bootstrap is wired to built a moden enterprise web application.
+Technologies used.
+
 *Spring 4.0
 *Hibernate
 *Hibernate OGM

@@ -8,7 +8,7 @@
 		transaction-type="JTA">
 		
 		<provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
-		<jta-data-source />
+		<!-- <jta-data-source /> -->
 		<!-- the below should be mapped to hibernate cfg file -->
 		 <class>com.ecommerce.web.model.TshirtHenley</class>
 		<properties>
